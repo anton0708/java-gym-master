@@ -43,7 +43,12 @@ public class Timetable {
             for(TrainingSession t : e.values()){
                 if(coaches.containsKey(t.getCoach())) {
                     i = coaches.get(t.getCoach());
+<<<<<<< HEAD
                 } else {
+=======
+                }
+                else {
+>>>>>>> b6c15adb089a57589c08f809f45bdc43c14b88ee
                     i = 0;
                 }
                 i++;
