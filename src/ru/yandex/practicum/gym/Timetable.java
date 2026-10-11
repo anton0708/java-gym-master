@@ -11,7 +11,7 @@ public class Timetable {
         //сохраняем занятие в расписании
         TreeMap<TimeOfDay, TrainingSession> training = new TreeMap<>();
 
-        if(timetable.containsKey(trainingSession.getDayOfWeek())) {
+        if (timetable.containsKey(trainingSession.getDayOfWeek())) {
             training = timetable.get(trainingSession.getDayOfWeek());
         }
 
@@ -38,9 +38,9 @@ public class Timetable {
     public List<Map.Entry<Coach, Integer>> getCountByCoaches() {
         Map<Coach, Integer> coaches = new HashMap<>();
 
-        for(TreeMap<TimeOfDay, TrainingSession> e : timetable.values() ){
+        for (TreeMap<TimeOfDay, TrainingSession> e : timetable.values()) {
             int i = 0;
-            for(TrainingSession t : e.values()) {
+            for (TrainingSession t : e.values()) {
                 if (coaches.containsKey(t.getCoach())) {
                     i = coaches.get(t.getCoach());
                 } else {
