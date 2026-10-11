@@ -1,6 +1,5 @@
 package ru.yandex.practicum.gym;
 
-import javax.swing.plaf.synth.SynthGraphicsUtils;
 import java.util.*;
 
 public class Timetable {
