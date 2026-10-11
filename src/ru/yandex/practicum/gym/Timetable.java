@@ -41,7 +41,7 @@ public class Timetable {
         for(TreeMap<TimeOfDay, TrainingSession> e : timetable.values() ){
             int i = 0;
             for(TrainingSession t : e.values()){
-                if(coaches.containsKey(t.getCoach())) {
+                if (coaches.containsKey(t.getCoach())) {
                     i = coaches.get(t.getCoach());
                 } else {
                     i = 0;
